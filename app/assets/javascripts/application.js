@@ -10,7 +10,24 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
+//= require modernizr-2.6.2.min
+//= require bootstrap
+//= require owl.carousel
+//= require script
+//= require stickUp.min
+
+
+//= require jquery.corner
+
+//= require wow.min
+//= require uiMorphingButton_inflow
+
+// Magnific Popup core JS file
+
+//= require jquery.magnific-popup
+//= require classie
 //= require turbolinks
 //= require_tree .
