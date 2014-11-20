@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 
 ruby '2.1.2'
+
+gem 'stripe', '~> 1.15.0
