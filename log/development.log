@@ -15619,3 +15619,900 @@ Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 12:48:5
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 12:48:50 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:10:56 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 260ms (Views: 250.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:10:57 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:11:36 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:11:37 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:12:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 99ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:14:53 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:15:56 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 101ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 98ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:04 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 204ms (Views: 196.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:25:32 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:31:19 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:34:22 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:34:23 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/magnific-popup.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/stickUp.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/uiMorphingButton_inflow.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/jquery.magnific-popup.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 22:42:32 +0100
