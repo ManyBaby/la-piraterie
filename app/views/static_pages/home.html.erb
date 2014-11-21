@@ -73,37 +73,37 @@
         </p>
 
        <%= form_tag charges_path id: 'chargeForm' do %>
-           <script src="https://checkout.stripe.com/v2/checkout.js"
-                     class="stripe-button"
-                     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                     data-description="Cuvée du Chateau, La Favorite"
-                     data-amount="11000"
-                     data-currency="eur"
-                     data-image"/icon/box.svg"
-                     data-address
-                     >
-           </script>
+
+           <script src="https://checkout.stripe.com/checkout.js"></script>
            <%= hidden_field_tag 'stripeToken' %>
            <%= hidden_field_tag 'stripeEmail' %>
+           <%= hidden_field_tag 'amount', 11000 %>
+
            <button id="btn-buy" type="button" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Profiter de l'offre maintenant</button>
+
            <script>
-           var handler = StripeCheckout.configure({
-             key: '<%= Rails.configuration.stripe[:publishable_key] %>',
-             token: function(token, arg) {
-               document.getElementById("stripeToken").value = token.id;
-               document.getElementById("stripeEmail").value = token.email;
-               document.getElementById("chargeForm").submit();
-             }
-           });
-            document.getElementById('btn-buy').addEventListener('click', function(e) {
-             handler.open({
-               name: 'La Piraterie',
-               description: 'La Favorite Réserve du Chateau (110 €)',
-               amount: 11000
-           });
-           e.preventDefault();
-          })
-         </script>
+             var handler = StripeCheckout.configure({
+                key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+                token: function(token, arg) {
+                  document.getElementById("stripeToken").value = token.id;
+                  document.getElementById("stripeEmail").value = token.email;
+                  document.getElementById("chargeForm").submit();
+               }
+             });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+               handler.open({
+                amount: document.getElementById("amount").value
+                name: "La Piraterie",
+                description: "La Favorite Réserve du Chateau (110 €)",
+                panelLabel: "Profiter de l'offre maintenant",
+                allowRememberMe: false,
+                shippingAddress: true,
+                billingAddress: true,
+             });
+             e.preventDefault();
+            })
+          </script>
+
        <% end %>
 
        <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
