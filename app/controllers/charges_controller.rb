@@ -4,9 +4,16 @@ class ChargesController < ApplicationController
      # Amount in cents
      @amount = 11000
 
+     # Set your secret key: remember to change this to your live secret key in production
+     # See your keys here https://dashboard.stripe.com/account
+     Stripe.api_key = Rails.configuration.stripe[:secret_key]
+
+     # Get the credit card details submitted by the form
+     token = params[:stripeToken]
+
      customer = Stripe::Customer.create(
        :email => params[:stripeEmail],
-       :card  => params[:stripeToken]
+       :card  => token
      )
 
      charge = Stripe::Charge.create(
@@ -16,9 +23,9 @@ class ChargesController < ApplicationController
        :currency    => 'eur'
      )
 
-   rescue Stripe::CardError => e
-     flash[:error] = e.message
-     redirect_to charges_path
+    rescue Stripe::CardError => e
+      flash[:error] = e.message
+      redirect_to charges_path
    end
 end
 

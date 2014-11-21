@@ -38,6 +38,18 @@ body, html {
   border-color: #DF4343;
 }
 
+
+.btn-warning{
+  color : #FFF;
+  background-color: #FF4E4E;
+  border-color: #DF4343;
+}
+
+.btn-warning:hover{
+  background-color: #FF4E4E;
+  border-color: #DF4343;
+}
+
 .price{
   font-size: 75px;
 }

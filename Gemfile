@@ -45,3 +45,5 @@ ruby '2.1.2'
 gem 'stripe', '~> 1.15.0'
 
 gem 'figaro'
+
+gem 'mandrill'
