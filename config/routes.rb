@@ -2,11 +2,15 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  resources :charges
+
   get 'static_pages/home'
 
   get 'static_pages/pay'
 
   get 'static_pages/share'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,258 +1,310 @@
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="status"></div>
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">La Piraterie</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+
+        <li class="menuItem"><a href="#labouteille">La bouteille</a></li>
+        <li class="menuItem"><a href="#lafavorite">La Distillerie</a></li>
+        <li class="menuItem"><a href="#ccmarche">Comment ça marche</a></li>
+        <li class="menuItem"><a href="#lespirates">Les Pirates</a></li>
+        <li class="menuItem"><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<!-- Section La bouteille -->
+<div id ="labouteille" class="content-section-a">
+
+    <div class="container">
+
+        <div class="row">
+
+    <div class="col-sm-6 pull-right wow fadeInRightBig">
+                <img class="img-responsive " src="img/la-piraterie-la-favorite.jpg" alt="">
+            </div>
+
+            <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
+                <h3 class="section-heading">La Favorite - La Reserve Du Chateau</h3>
+      <div class="sub-title lead3">Rhum Agricole Hors d’âge – 43% vol – 70 cl – Millésime 2002</div>
+        <p class="lead">
+          Vieillie 12 ans dans des fûts en bois de chêne, la Réserve du Château, <b>millésimée 2002</b>, est un rhum élaboré en petite quantité par le Maître de Chai de la Favorite.
+          <br>
+            Des notes de fruits et d’épices, une structure vive et complexe, une fin  de bouche longue et pleine.
+          <br>
+          <br>
+            Série limitée à 10 000 exemplaires.
+          <br>
+            Bouteille cachetée à la cire à la main.
+          <br>
+          <br>
+            <b><span class="orange-text">-15 %</span> par rapport au prix constaté en magasin : <strike>130 €</strike></b>
+          <br>
+          <b>
+            <span class="price">110 €</span>
+          <br>
+            + frais de ports gratuits
+          <br>
+
+
+          </b>
+        </p>
+
+       <%= form_tag charges_path id: 'chargeForm' do %>
+           <script src="https://checkout.stripe.com/v2/checkout.js"
+                     class="stripe-button"
+                     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                     data-description="Cuvée du Chateau, La Favorite"
+                     data-amount="11000"
+                     data-currency="eur"
+                     data-image"/icon/box.svg"
+                     data-address
+                     >
+           </script>
+           <%= hidden_field_tag 'stripeToken' %>
+           <%= hidden_field_tag 'stripeEmail' %>
+           <button id="btn-buy" type="button" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Profiter de l'offre maintenant</button>
+           <script>
+           var handler = StripeCheckout.configure({
+             key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+             token: function(token, arg) {
+               document.getElementById("stripeToken").value = token.id;
+               document.getElementById("stripeEmail").value = token.email;
+               document.getElementById("chargeForm").submit();
+             }
+           });
+            document.getElementById('btn-buy').addEventListener('click', function(e) {
+             handler.open({
+               name: 'La Piraterie',
+               description: 'La Favorite Réserve du Chateau (110 €)',
+               amount: 11000
+           });
+           e.preventDefault();
+          })
+         </script>
+       <% end %>
+
+       <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
+    </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</div>
+
+
+
+
+
+
+<!-- Section La Favorite -->
+  <div id ="lafavorite" class="content-section-a">
+
+      <div class="container">
+
+          <div class="row">
+
+              <div class="col-sm-6 pull-left wow fadeInLeftBig">
+                  <img class="img-responsive " src="img/la-favorite-logo.jpg" alt="">
+              </div>
+
+              <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
+                <h3 class="section-heading">Habitation La Favorite</h3>
+                <div class="sub-title lead3">Une distillerie familliale dans la plus pure tradition</div>
+                <p class="lead">
+                  La distillerie La Favorite est située aux portes de Fort de France, sur l’île de la Martinique dans les Antilles Françaises. <br> <br>La distillerie La Favorite élève des rhums vieux dans la plus pure tradition de l’élevage des grands rhums martiniquais, c’est-à-dire en fûts de chêne dont les tanins les plus agressifs ont été extraits par le stockage de whisky ou de cognac.
+                  <br>C’est donc dans des fûts sélectionnés pour leur capacité à libérer des arômes d’élevage et d’évolution, que les rhums vieux la Favorite vont donner naissance à un bouquet, plein et rond, d’une grande générosité.<br><br>Avec une ouverture en bouche de fruits confits (mangue, prune, figue, etc..), se renforçant pour révéler des notes de fruits secs et grillés (cacahuète, café, cacao,..), les rhums vieux la Favorite s’éteignent lentement en une fin de bouche vanillée et réglissée. C’est pour être gardés en bouche, et ainsi être réellement appréciés, que les rhums vieux la Favorite sont ramenés à 40°. <br>A ce degré, l’alcool est au service des composés gustatifs du rhum et vient renforcer leurs principes sans les dominer.
+                  <i>*Texte du site de La Favorite</i>
+                </p>
+
+
+                <a class="btn btn-embossed btn-info" href="#" role="button">Profiter de l'offre maintenant</a>
+           <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
+      </div>
+          </div>
+      </div>
+      <!-- /.container -->
   </div>
 
-  <!-- NavBar-->
-  <nav class="navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#home">La Piraterie</a>
-      </div>
-
-      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-
-          <li class="menuItem"><a href="#labouteille">La bouteille</a></li>
-          <li class="menuItem"><a href="#ccmarche">Comment ça marche</a></li>
-          <li class="menuItem"><a href="#lespirates">Les Pirates</a></li>
-          <li class="menuItem"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
 
 
-
-  <!-- La bouteille -->
-    <div id ="labouteille" class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-
-        <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/la-piraterie-la-favorite.jpg" alt="">
-                </div>
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
-                    <h3 class="section-heading">La Favorite - La Reserve Du Chateau</h3>
-          <div class="sub-title lead3">Rhum Agricole Hors d’âge / 43% vol /70 cl /Millésime 2002</div>
-            <p class="lead">
-              Vieillie 12 ans dans des fûts en bois de chêne, la Réserve du Château, <b>millésimée 2002</b>, est un rhum élaboré en petite quantité par le Maître de Chai de la Favorite.
-              <br>
-                Des notes de fruits et d’épices, une structure vive et complexe, une fin  de bouche longue et pleine.
-              <br>
-              <br>
-                Série limitée à 10 000 exemplaires.
-              <br>
-                Bouteille cachetée à la cire à la main.
-              <br>
-              <br>
-                <b><span class="orange-text">-15 %</span> par rapport au prix constaté en magasin : <strike>130 €</strike></b>
-              <br>
-              <b>
-                <span class="price">110 €</span>
-              <br>
-                + frais de ports gratuits
-              <br>
-
-
-              </b>
-            </p>
-
-
-           <a class="btn btn-embossed btn-info" href="#" role="button">Profiter de l'offre maintenant</a>
-
-           <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
-        </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
- <!-- La bouteille -->
-    <div id ="labouteille" class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-sm-6 pull-left wow fadeInLeftBig">
-                    <img class="img-responsive " src="img/la-favorite-logo.jpg" alt="">
-                </div>
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
-                  <h3 class="section-heading">Habitation La Favorite</h3>
-                  <div class="sub-title lead3">Une distillerie familliale dans la plus pure tradition</div>
-                  <p class="lead">
-                    La distillerie La Favorite est située aux portes de Fort de France, sur l’île de la Martinique dans les Antilles Françaises. <br> <br>La distillerie La Favorite élève des rhums vieux dans la plus pure tradition de l’élevage des grands rhums martiniquais, c’est-à-dire en fûts de chêne dont les tanins les plus agressifs ont été extraits par le stockage de whisky ou de cognac.
-                    <br>C’est donc dans des fûts sélectionnés pour leur capacité à libérer des arômes d’élevage et d’évolution, que les rhums vieux la Favorite vont donner naissance à un bouquet, plein et rond, d’une grande générosité.<br><br>Avec une ouverture en bouche de fruits confits (mangue, prune, figue, etc..), se renforçant pour révéler des notes de fruits secs et grillés (cacahuète, café, cacao,..), les rhums vieux la Favorite s’éteignent lentement en une fin de bouche vanillée et réglissée. C’est pour être gardés en bouche, et ainsi être réellement appréciés, que les rhums vieux la Favorite sont ramenés à 40°. <br>A ce degré, l’alcool est au service des composés gustatifs du rhum et vient renforcer leurs principes sans les dominer.
-                    <i>*Texte du site de La Favorite</i>
-                  </p>
-
-
-                  <a class="btn btn-embossed btn-info" href="#" role="button">Profiter de l'offre maintenant</a>
-             <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
-        </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
 
 
 <!-- Comment ça marche ? -->
-  <div id="ccmarche" class="content-section-b" style="border-top: 0">
-    <div class="container">
+<div id="ccmarche" class="content-section-b" style="border-top: 0">
+  <div class="container">
 
-      <div class="col-md-12 text-center wrap_title">
-        <h2>Comment ça marche ?</h2>
-        <p class="lead" style="margin-top:0">C'est simple comme bonjour.</p>
+    <div class="col-md-12 text-center wrap_title">
+      <h2>Comment ça marche ?</h2>
+      <p class="lead" style="margin-top:0">C'est simple comme bonjour.</p>
 
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-3 wow fadeInDown text-center clearfix">
-          <img class="rotate" src="img/icon/stopwatch.svg" alt="Generic placeholder image">
-          <h3>Etape 01</h3>
-          <p class="lead">Vous achetez votre bouteille <b class ="orange-text">avant le 27 novembre 2014</b></p>
-
-          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-sm-3 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-           <h3>Etape 02</h3>
-           <p class="lead">Vous avez jusqu'à la fin de la vente pour nous aider à trouver d’autres acheteurs. <b class ="orange-text">Plus on est nombreux moins on paye !</b></p>
-           <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-sm-3 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
-           <h3>Etape 03</h3>
-          <p class="lead">Nous vous confirmons votre achat par email dès que <b class ="orange-text"> le seuil minimum des 61 acheteurs est atteint</b></p>
-          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-sm-3 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/box.svg" alt="Generic placeholder image">
-           <h3>Etape 04</h3>
-          <p class="lead">Vous êtes livré 10 jours après la fin de la vente. <b class ="orange-text">Juste à temps pour les fêtes</b></p>
-          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-      </div><!-- /.row -->
-
-      </div><!-- /.row -->
-
-      <div class="row tworow">
-
-        <div class="col-sm-6 col-sm-offset-3  wow fadeInDown text-center">
-          <img class="rotate" src="img/icon/toilet-paper.svg" alt="Generic placeholder image">
-          <h3>Que se passe-t-il si la barre de 61 ventes n’est pas atteinte ?</h3>
-          <p class="lead"> La vente sera annulée et aucune somme ne vous sera prélevée </p>
-
-         <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
     </div>
-  </div>
 
+    <div class="row">
 
-  <!-- Qui sont les pirates -->
-  <div id="lespirates" class="content-section-b" style="border-top: 0">
-    <div class="container">
+      <div class="col-sm-3 wow fadeInDown text-center clearfix">
+        <img class="rotate" src="img/icon/stopwatch.svg" alt="Generic placeholder image">
+        <h3>Etape 01</h3>
+        <p class="lead">Vous achetez votre bouteille <b class ="orange-text">avant le 27 novembre 2014</b></p>
 
-      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-        <h2>Qui sont les Pirates?</h2>
-        <p class="lead" style="margin-top:0">Avant tout une bande de passionnés</p>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
 
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-4 wow fadeInDown text-center">
-          <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-          <h3>Christian de Montagere</h3>
-          <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-
-          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-sm-4 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-           <h3>Cyrille Gaubert</h3>
-           <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-           <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-sm-4 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/polaroid.svg" alt="Generic placeholder image">
-           <h3>Emmanuel Louisy-Gabriel</h3>
-          <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
-
-      </div><!-- /.row -->
-
-      <div class="row tworow">
-
-        <div class="col-sm-6 col-sm-offset-3  wow fadeInDown text-center">
-          <img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
-          <h3>Manifeste</h3>
-          <p class="lead">
-            Notre objectif en associant nos savoir-faire et notre passion du rhum est de faciliter le partage et la découverte des rhums du monde entier.
-            <br>
-            Nous avons pleins d’idées en tête qui se réaliserons au fur et à mesure tout en s’assurant un service de qualité.
-            <br>
-            Nous sommes donc très fiers de présenter une magnifique première bouteille à un prix qui permet à la fois une bonne affaire et une belle découverte.
-          </p>
+      <div class="col-sm-3 wow fadeInDown text-center">
+        <img  class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
+         <h3>Etape 02</h3>
+         <p class="lead">Vous avez jusqu'à la fin de la vente pour nous aider à trouver d’autres acheteurs. <b class ="orange-text">Plus on est nombreux moins on paye !</b></p>
          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-        </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-lg-4 -->
 
+      <div class="col-sm-3 wow fadeInDown text-center">
+        <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+         <h3>Etape 03</h3>
+        <p class="lead">Nous vous confirmons votre achat par email dès que <b class ="orange-text"> le seuil minimum des 61 acheteurs est atteint</b></p>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
 
+      <div class="col-sm-3 wow fadeInDown text-center">
+        <img  class="rotate" src="img/icon/box.svg" alt="Generic placeholder image">
+         <h3>Etape 04</h3>
+        <p class="lead">Vous êtes livré 10 jours après la fin de la vente. <b class ="orange-text">Juste à temps pour les fêtes</b></p>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
 
-      </div><!-- /.row -->
-    </div>
+    </div><!-- /.row -->
+
+    </div><!-- /.row -->
+
+    <div class="row tworow">
+
+      <div class="col-sm-6 col-sm-offset-3  wow fadeInDown text-center">
+        <img class="rotate" src="img/icon/toilet-paper.svg" alt="Generic placeholder image">
+        <h3>Que se passe-t-il si la barre de 61 ventes n’est pas atteinte ?</h3>
+        <p class="lead"> La vente sera annulée et aucune somme ne vous sera prélevée </p>
+
+       <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
   </div>
+</div>
+
+
+
+
+
+
+<!-- Qui sont les pirates -->
+<div id="lespirates" class="content-section-b" style="border-top: 0">
+  <div class="container">
+
+    <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+      <h2>Qui sont les Pirates?</h2>
+      <p class="lead" style="margin-top:0">Avant tout une bande de passionnés</p>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-4 wow fadeInDown text-center">
+        <img class="rotate" src="img/les-pirates/christian-la-piraterie.png" alt="Generic placeholder image">
+        <h3>Christian de Montagere</h3>
+        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-sm-4 wow fadeInDown text-center">
+        <img  class="rotate" src="img/les-pirates/cyrille-la-piraterie.png" alt="Generic placeholder image">
+         <h3>Cyrille Gaubert</h3>
+         <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+         <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-sm-4 wow fadeInDown text-center">
+        <img  class="rotate" src="img/les-pirates/emmanuel-la-piraterie.png" alt="Generic placeholder image">
+         <h3>Emmanuel Louisy-Gabriel</h3>
+        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
+    <div class="row tworow">
+
+      <div class="col-sm-6 col-sm-offset-3  wow fadeInDown text-center">
+        <img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
+        <h3>Manifeste</h3>
+        <p class="lead">
+          Notre objectif en associant nos savoir-faire et notre passion du rhum est de faciliter le partage et la découverte des rhums du monde entier.
+          <br>
+          Nous avons pleins d’idées en tête qui se réaliserons au fur et à mesure tout en s’assurant un service de qualité.
+          <br>
+          Nous sommes donc très fiers de présenter une magnifique première bouteille à un prix qui permet à la fois une bonne affaire et une belle découverte.
+        </p>
+       <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+
+
+    </div><!-- /.row -->
+  </div>
+</div>
+
+
+
 
 
 
 <!-- Subscribe newsletter -->
-
-  <div  class="content-section-c ">
-    <div class="container">
-      <div class="row">
+<div  id="newsletter" class="content-section-c">
+  <div class="container">
+    <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center wrap_title white">
         <h2>Ne ratez aucune de nos offres</h2>
         <p class="lead" style="margin-top:0">Nous aimons le partage de tout SAUF de votre email. Nous ne la partageons pas, nous la vendons pas, nous ne la louons pas bref nous la gardons pour nous. Vous ne recevrez que des mails des offres de La Piraterie.</p>
-       </div>
-      <div class="mockup-content">
+      </div>
+        <div class="mockup-content">
           <div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
             <button type="button "><span>Abonnez-vous à la newsletter</span></button>
             <div class="morph-content">
               <div>
                 <div class="content-style-form content-style-form-4 ">
-                  <h2 class="morph-clone">Abonnez-vous à la newsletter</h2>
-                  <form>
-                    <p><label>Votre Adresse email</label><input type="text" value="1" name ="manutest"/></p>
-                    <p><button>Je m'abonne !</button></p>
-                  </form>
+                 <h2 class="morph-clone">Abonnez-vous à la newsletter</h2>
+                 <form>
+                   <p><label>Votre Adresse email</label><input type="text" value="1" name ="manutest"/></p>
+                   <p><button>Je m'abonne !</button></p>
+                 </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
+</div>
+
+
+
 
 
 

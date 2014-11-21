@@ -3,10 +3,4 @@ class StaticPagesController < ApplicationController
     name = params[:name]
     puts name
   end
-
-  def pay
-  end
-
-  def share
-  end
 end

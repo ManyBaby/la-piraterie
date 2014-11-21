@@ -50,8 +50,9 @@
 
 <body id="home">
 
-<%= yield %>
-
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
 
  <footer>
       <div class="container">
@@ -110,6 +111,12 @@
     });
 
   </script>
+
+  <!-- Stripe -->
+
+  <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+
+
   <!-- Smoothscroll -->
   <!-- <script type="text/javascript" src="js/jquery.corner.js"></script>
   <script src="js/wow.min.js"></script>
