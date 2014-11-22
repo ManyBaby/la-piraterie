@@ -29,4 +29,10 @@ class ChargesController < ApplicationController
       flash[:error] = e.message
       redirect_to charges_path
    end
+
+   def new
+
+    @euroamount = @amount / 100.0
+
+   end
 end
