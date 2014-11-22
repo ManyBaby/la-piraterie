@@ -71,10 +71,12 @@
 
           </b>
         </p>
-        <form action="/charge" method="POST">
-       <%# form_tag charges_path id: 'chargeForm' do %>
 
-        <script src="https://checkout.stripe.com/checkout.js"></script>
+       <%= form_tag charges_path, id: 'chargeForm' do %>
+
+        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+        <%= hidden_field_tag 'stripeToken' %>
+        <%= hidden_field_tag 'stripeEmail' %>
         <%= hidden_field_tag 'amount', 11000 %>
 
         <button id="myStripeButton" class="btn btn-warning btn-lg btn-block">Profiter de l'offre maintenant</button>
@@ -84,6 +86,9 @@
             key: '<%= Rails.configuration.stripe[:publishable_key] %>',
             image: '/img/la-piraterie-logo.png',
             token: function(token, args) {
+              document.getElementById("stripeToken").value = token.id;
+              document.getElementById("stripeEmail").value = token.email;
+              document.getElementById("chargeForm").submit();
               // Use the token to create the charge with a server-side script.
               // You can access the token ID with `token.id`
               // args will contain all the billing and shipping info.
@@ -105,8 +110,8 @@
             e.preventDefault();
         });
         </script>
-        </form>
-       <%# end %>
+
+       <% end %>
 
        <!-- <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
     </div>

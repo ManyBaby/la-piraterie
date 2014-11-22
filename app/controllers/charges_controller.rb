@@ -22,11 +22,11 @@ class ChargesController < ApplicationController
        :description => 'La Favorite Chateau Flash',
        :currency    => 'eur'
      )
+     puts "Success"
+     redirect_to new_charge_path
 
     rescue Stripe::CardError => e
       flash[:error] = e.message
       redirect_to charges_path
    end
 end
-
-
