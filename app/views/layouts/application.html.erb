@@ -19,6 +19,14 @@
     <meta name="description" content="Le club des amateurs de rhums vieux et d'exception">
     <meta name="author" content="">
 
+    <!-- meta Facebook Share -->
+
+    <meta property="og:type"   content="website" />
+    <meta property="og:url"    content="https://la-piraterie.herokuapp.com/" />
+    <meta property="og:title"  content="Vente Flash de La Piraterie" />
+    <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" />
+
+
     <title>La Piraterie</title>
 
     <!-- Bootstrap core CSS -->
@@ -49,6 +57,19 @@
 
 
 <body id="home">
+
+
+  <!-- Facebook Share script -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+   fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
     <%= yield %>
 
  <footer>
@@ -59,7 +80,7 @@
             <div class="footer-banner">
               <h3 class="footer-title">La Piraterie – RumClub</h3>
               <ul>
-                <li>Christian de Montagere</li>
+                <li>Christian de Montaguère</li>
                 <li>16 rue de l'abbé Grégoire</li>
                 <li>75016 Paris</li>
               </ul>
