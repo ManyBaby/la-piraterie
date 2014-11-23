@@ -19,7 +19,7 @@ class ChargesController < ApplicationController
      charge = Stripe::Charge.create(
        :customer    => customer.id,
        :amount      => params[:amount],
-       :description => 'La Favorite Chateau Flash',
+       :description => 'La Favorite Réserve du Château Flash',
        :currency    => 'eur'
      )
      puts "Success"

@@ -63,6 +63,7 @@
           <br>
         </p>
 
+
         <%= form_tag charges_path, id: 'chargeForm' do %>
 
         <script src="https://checkout.stripe.com/v2/checkout.js"></script>
@@ -94,7 +95,7 @@
               billingAddress: true,
               amount: document.getElementById("amount").value,
               name: "La Piraterie",
-              description: "Réserve du Chateau millésime 2002",
+              description: "Réserve du Château millésime 2002",
               currency: "eur",
               panelLabel: "Payer {{amount}}€"
             });
@@ -103,6 +104,8 @@
         </script>
 
         <% end %>
+
+        <div class="fb-like" data-href="http://bit.ly/14NmATf" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
         <!-- TODO: add credit card seurity logos -->
       </div>
     </div>
