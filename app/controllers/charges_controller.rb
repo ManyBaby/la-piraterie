@@ -23,16 +23,14 @@ class ChargesController < ApplicationController
        :currency    => 'eur'
      )
      puts "Success"
-     redirect_to new_charge_path
+     redirect_to thankyou_path
 
     rescue Stripe::CardError => e
       flash[:error] = e.message
-      redirect_to thankyou_path
+
    end
 
    def new
-
-    @euroamount = @amount / 100.0
 
    end
 end
