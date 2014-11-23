@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/home'
 
-  get 'static_pages/pay'
+  get 'static_pages/thankyou' , as: 'thankyou'
 
   get 'static_pages/share'
 
