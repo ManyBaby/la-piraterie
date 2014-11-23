@@ -27,6 +27,15 @@ body, html {
 
 }
 
+#mc_embed_signup{
+  background-color: rgb(255, 78, 78);
+}
+
+.manifest{
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
 .btn-info{
   color : #FFF;
   background-color: #FF4E4E;
