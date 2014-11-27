@@ -61,6 +61,7 @@ GEM
     minitest (5.4.3)
     multi_json (1.10.1)
     netrc (0.8.0)
+    newrelic_rpm (3.9.7.266)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -138,6 +139,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mandrill
+  newrelic_rpm
   pg
   rails (= 4.1.4)
   rails_12factor
