@@ -46,6 +46,6 @@ gem 'stripe', '~> 1.15.0'
 
 gem 'figaro'
 
-gem 'mandrill'
+gem 'mandrill-api'
 
 gem 'newrelic_rpm'

@@ -29,5 +29,5 @@
 
 //= require jquery.magnific-popup
 //= require classie
-//= require turbolinks
+// require turbolinks
 //= require_tree .

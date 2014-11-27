@@ -1,5 +1,8 @@
 class ChargesController < ApplicationController
 
+  require 'mandrill'
+  mandrill = Mandrill::API.new 'MANDRILL_API_KEY'
+
    def create
      # Amount in cents
      @amount = 11000
@@ -22,7 +25,8 @@ class ChargesController < ApplicationController
        :description => 'La Favorite Réserve du Château Flash',
        :currency    => 'eur'
      )
-     puts "Success"
+
+
      redirect_to thankyou_path
 
     rescue Stripe::CardError => e
