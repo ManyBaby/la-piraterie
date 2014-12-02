@@ -1,7 +1,7 @@
 class ChargesController < ApplicationController
 
   require 'mandrill'
-  mandrill = Mandrill::API.new 'MANDRILL_API_KEY'
+  mandrill = Mandrill::API.new 'Wmk8laZRhN8rCsf0cYH6-w'
 
    def create
      # Amount in cents

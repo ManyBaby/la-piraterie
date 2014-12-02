@@ -3,4 +3,9 @@ class StaticPagesController < ApplicationController
     name = params[:name]
     puts name
   end
+
+  def thankyou
+
+
+  end
 end
