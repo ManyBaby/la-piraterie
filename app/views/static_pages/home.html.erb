@@ -63,57 +63,7 @@
           <br>
           <h3>VENTE TERMINÉE</h3>
           <br>
-          <small>* Pour toute livraison en France Métropolitaine. Pour l'étranger et les DOM-TOM n'hésitez pas à nous contacter <a href="mailto:cyrille@la-piraterie.com?subject=Réserve du Château: Livraison à l'étranger&body=Salut les Pirates !"><b class="orange-text">ICI</b></a></small>
         </p>
-
-<!--
-        <%= form_tag charges_path, id: 'chargeForm' do %>
-
-        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
-        <%= hidden_field_tag 'stripeToken' %>
-        <%= hidden_field_tag 'stripeEmail' %>
-        <%= hidden_field_tag 'amount', 11000 %>
-
-        <button id="myStripeButton" class="btn btn-warning btn-lg btn-block">Profiter de l'offre maintenant</button>
-
-        <script>
-        var handler = StripeCheckout.configure({
-          key: '<%= Rails.configuration.stripe[:publishable_key] %>',
-          image: '/img/la-piraterie-logo.png',
-          token: function(token, args) {
-            document.getElementById("stripeToken").value = token.id;
-            document.getElementById("stripeEmail").value = token.email;
-            document.getElementById("chargeForm").submit();
-              // Use the token to create the charge with a server-side script.
-              // You can access the token ID with `token.id`
-              // args will contain all the billing and shipping info.
-              // The billing info is automatically attached to the token and card.
-            }
-          });
-
-        document.getElementById('myStripeButton').addEventListener('click', function(e) {
-            // Open Checkout with further options
-            handler.open({
-              shippingAddress: true,
-              billingAddress: true,
-              amount: document.getElementById("amount").value,
-              name: "La Piraterie",
-              description: "Réserve du Château millésime 2002",
-              currency: "eur",
-              panelLabel: "Payer {{amount}}€"
-            });
-            e.preventDefault();
-          });
-        </script>
-
-        <% end %>
- -->
-        <div class="fb-like" data-href="http://bit.ly/1uMzA0d" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-        <div>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.la-piraterie.com/" data-text="Ça commence fort ! Vente flash La Piraterie, -17% sur la Réserve du Château de La Favorite (port offert)" data-lang="fr" data-size="large" data-related="RhumLaFavorite" data-count="none" data-hashtags="cadeau">Tweeter</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-        <!-- TODO: add credit card seurity logos -->
       </div>
     </div>
   </div>
