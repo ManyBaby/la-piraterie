@@ -42,10 +42,10 @@ gem 'rails_12factor', group: :production
 
 ruby '2.1.2'
 
-gem 'stripe', '~> 1.15.0'
+# gem 'stripe', '~> 1.15.0'
 
 gem 'figaro'
 
-gem 'mandrill-api'
+# gem 'mandrill-api'
 
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'
