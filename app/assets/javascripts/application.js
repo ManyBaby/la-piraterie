@@ -29,6 +29,4 @@
 
 //= require jquery.magnific-popup
 //= require classie
-//= require google_analytics
-// require turbolinks
 //= require_tree .
